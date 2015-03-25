@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AB9823BD-399B-42B6-9F9E-76FA8E1700B5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>weAppLoginWebService</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>69F660FB28A24FFE059E8E33C4C1D39A3FC965D5</key>
+		<string>https://github.com/Paulo-http/weAppLoginWebservice.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>app_iOS/weAppLoginWebService/weAppLoginWebService.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>69F660FB28A24FFE059E8E33C4C1D39A3FC965D5</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Paulo-http/weAppLoginWebservice.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>69F660FB28A24FFE059E8E33C4C1D39A3FC965D5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>69F660FB28A24FFE059E8E33C4C1D39A3FC965D5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>weAppLoginWebservice</string>
+		</dict>
+	</array>
+</dict>
+</plist>
