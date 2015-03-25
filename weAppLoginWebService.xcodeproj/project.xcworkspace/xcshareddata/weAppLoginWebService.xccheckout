@@ -10,31 +10,31 @@
 	<string>weAppLoginWebService</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>69F660FB28A24FFE059E8E33C4C1D39A3FC965D5</key>
-		<string>https://github.com/Paulo-http/weAppLoginWebservice.git</string>
+		<key>E6F3EA5A1DDEB4CE61FBA7A5F0CC37BDD68B2F8F</key>
+		<string>https://github.com/Paulo-http/BEPiD-Mail.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>app_iOS/weAppLoginWebService/weAppLoginWebService.xcodeproj</string>
+	<string>weAppLoginWebService.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>69F660FB28A24FFE059E8E33C4C1D39A3FC965D5</key>
-		<string>../../../..</string>
+		<key>E6F3EA5A1DDEB4CE61FBA7A5F0CC37BDD68B2F8F</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Paulo-http/weAppLoginWebservice.git</string>
+	<string>https://github.com/Paulo-http/BEPiD-Mail.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>69F660FB28A24FFE059E8E33C4C1D39A3FC965D5</string>
+	<string>E6F3EA5A1DDEB4CE61FBA7A5F0CC37BDD68B2F8F</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>69F660FB28A24FFE059E8E33C4C1D39A3FC965D5</string>
+			<string>E6F3EA5A1DDEB4CE61FBA7A5F0CC37BDD68B2F8F</string>
 			<key>IDESourceControlWCCName</key>
-			<string>weAppLoginWebservice</string>
+			<string>BEPiD-Mail</string>
 		</dict>
 	</array>
 </dict>

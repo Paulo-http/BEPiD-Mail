@@ -13,6 +13,7 @@
 		758906051AC35A3B007BF3B9 /* introBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 758906031AC35A3B007BF3B9 /* introBackground.jpg */; };
 		758906061AC35A3B007BF3B9 /* mainBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 758906041AC35A3B007BF3B9 /* mainBackground.jpg */; };
 		758906081AC35DBE007BF3B9 /* buttonOrange.png in Resources */ = {isa = PBXBuildFile; fileRef = 758906071AC35DBE007BF3B9 /* buttonOrange.png */; };
+		75D98EF61AC370C5002B6D9A /* logoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D98EF51AC370C5002B6D9A /* logoutViewController.m */; };
 		75F785E61AC32851007265C7 /* sendMailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F785E51AC32851007265C7 /* sendMailViewController.m */; };
 		DB024E521ABC839C009E3C54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB024E511ABC839C009E3C54 /* main.m */; };
 		DB024E551ABC839C009E3C54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB024E541ABC839C009E3C54 /* AppDelegate.m */; };
@@ -48,6 +49,8 @@
 		758906031AC35A3B007BF3B9 /* introBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = introBackground.jpg; path = res/introBackground.jpg; sourceTree = "<group>"; };
 		758906041AC35A3B007BF3B9 /* mainBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mainBackground.jpg; path = res/mainBackground.jpg; sourceTree = "<group>"; };
 		758906071AC35DBE007BF3B9 /* buttonOrange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonOrange.png; path = res/buttonOrange.png; sourceTree = "<group>"; };
+		75D98EF41AC370C5002B6D9A /* logoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logoutViewController.h; sourceTree = "<group>"; };
+		75D98EF51AC370C5002B6D9A /* logoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = logoutViewController.m; sourceTree = "<group>"; };
 		75F785E41AC32851007265C7 /* sendMailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sendMailViewController.h; sourceTree = "<group>"; };
 		75F785E51AC32851007265C7 /* sendMailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sendMailViewController.m; sourceTree = "<group>"; };
 		DB024E4C1ABC839C009E3C54 /* weAppLoginWebService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weAppLoginWebService.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +92,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75D98EF71AC371EF002B6D9A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB024E751ABC857A009E3C54 /* Usuario.h */,
+				DB024E761ABC857A009E3C54 /* Usuario.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		75D98EF81AC37203002B6D9A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				754A83DC1AC09FFF0085FB3C /* ContatosTableViewController.h */,
+				754A83DD1AC09FFF0085FB3C /* ContatosTableViewController.m */,
+				DB024E561ABC839C009E3C54 /* ViewController.h */,
+				DB024E571ABC839C009E3C54 /* ViewController.m */,
+				75F785E41AC32851007265C7 /* sendMailViewController.h */,
+				75F785E51AC32851007265C7 /* sendMailViewController.m */,
+				754A83D31AC087F40085FB3C /* SingInViewController.h */,
+				754A83D41AC087F40085FB3C /* SingInViewController.m */,
+				754A83D01AC086450085FB3C /* SingUpViewController.h */,
+				754A83D11AC086450085FB3C /* SingUpViewController.m */,
+				75D98EF41AC370C5002B6D9A /* logoutViewController.h */,
+				75D98EF51AC370C5002B6D9A /* logoutViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		75D98EF91AC37212002B6D9A /* DAL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DAL;
+			sourceTree = "<group>";
+		};
 		DB024E431ABC839C009E3C54 = {
 			isa = PBXGroup;
 			children = (
@@ -110,23 +148,14 @@
 		DB024E4E1ABC839C009E3C54 /* weAppLoginWebService */ = {
 			isa = PBXGroup;
 			children = (
-				754A83DC1AC09FFF0085FB3C /* ContatosTableViewController.h */,
-				754A83DD1AC09FFF0085FB3C /* ContatosTableViewController.m */,
+				75D98EF91AC37212002B6D9A /* DAL */,
+				75D98EF81AC37203002B6D9A /* View */,
+				75D98EF71AC371EF002B6D9A /* Model */,
 				DB024E531ABC839C009E3C54 /* AppDelegate.h */,
 				DB024E541ABC839C009E3C54 /* AppDelegate.m */,
-				DB024E561ABC839C009E3C54 /* ViewController.h */,
-				DB024E571ABC839C009E3C54 /* ViewController.m */,
 				DB024E591ABC839C009E3C54 /* Main.storyboard */,
-				75F785E41AC32851007265C7 /* sendMailViewController.h */,
-				75F785E51AC32851007265C7 /* sendMailViewController.m */,
-				754A83D31AC087F40085FB3C /* SingInViewController.h */,
-				754A83D41AC087F40085FB3C /* SingInViewController.m */,
-				754A83D01AC086450085FB3C /* SingUpViewController.h */,
-				754A83D11AC086450085FB3C /* SingUpViewController.m */,
 				DB024E5E1ABC839C009E3C54 /* LaunchScreen.xib */,
 				DB024E4F1ABC839C009E3C54 /* Supporting Files */,
-				DB024E751ABC857A009E3C54 /* Usuario.h */,
-				DB024E761ABC857A009E3C54 /* Usuario.m */,
 			);
 			path = weAppLoginWebService;
 			sourceTree = "<group>";
@@ -273,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB024E771ABC857A009E3C54 /* Usuario.m in Sources */,
+				75D98EF61AC370C5002B6D9A /* logoutViewController.m in Sources */,
 				754A83DE1AC09FFF0085FB3C /* ContatosTableViewController.m in Sources */,
 				DB024E581ABC839C009E3C54 /* ViewController.m in Sources */,
 				754A83D51AC087F40085FB3C /* SingInViewController.m in Sources */,
