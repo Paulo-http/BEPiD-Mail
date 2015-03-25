@@ -1,19 +1,19 @@
 //
-//  ContatosTableViewController.m
+//  ContactsTableViewController.m
 //  weAppLoginWebService
 //
 //  Created by Paulo Henrique Leite on 3/23/15.
 //  Copyright (c) 2015 Humberto Vieira de Castro. All rights reserved.
 //
 
-#import "ContatosTableViewController.h"
+#import "ContactsTableViewController.h"
 #import "Usuario.h"
-#import "sendMailViewController.h"
+#import "SendMailViewController.h"
 
-@interface ContatosTableViewController ()
+@interface ContactsTableViewController ()
 @end
 
-@implementation ContatosTableViewController
+@implementation ContactsTableViewController
 NSMutableArray *users;
 Usuario *new;
 
@@ -70,15 +70,9 @@ Usuario *new;
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     self.contactUser = [users objectAtIndex:indexPath.row];
-    NSLog(@"%@", self.contactUser.email);
     UIStoryboard *main = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
-    
-    sendMailViewController *sendMail = [main instantiateViewControllerWithIdentifier:@"sendID"];
-    sendMail = [[sendMailViewController alloc]initWithUser:self.contactUser];
-    //sendMailViewController *sendMail2 = [[sendMailViewController alloc]initWithUser:self.contactUser];
-    //sendMail2 = [main instantiateViewControllerWithIdentifier:@"sendID"];
-    //[self presentViewController:sendMail2 animated:YES completion:nil];
-    //[self presentModalViewController:sendMail2 animated:YES];
+    SendMailViewController *sendMail = [main instantiateViewControllerWithIdentifier:@"sendID"];
+    sendMail = [[SendMailViewController alloc]initWithUser:self.contactUser];
     [self performSegueWithIdentifier:@"mailSegue" sender:self];
 
 

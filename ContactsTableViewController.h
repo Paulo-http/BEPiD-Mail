@@ -1,5 +1,5 @@
 //
-//  ContatosTableViewController.h
+//  ContactsTableViewController.h
 //  weAppLoginWebService
 //
 //  Created by Paulo Henrique Leite on 3/23/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "Usuario.h"
-@interface ContatosTableViewController : UITableViewController
+@interface ContactsTableViewController : UITableViewController
     @property (nonatomic) Usuario* contactUser;
 @end

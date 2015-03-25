@@ -73,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="401.5" y="289.5"/>
         </scene>
-        <!--Sing In View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="J0f-yi-hjr">
             <objects>
-                <viewController storyboardIdentifier="singInView" id="LFX-qr-Qz1" customClass="SingInViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="singInView" id="LFX-qr-Qz1" customClass="SignInViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ehc-Pa-PX8"/>
                         <viewControllerLayoutGuide type="bottom" id="daC-pB-sey"/>
@@ -168,10 +168,10 @@
             </objects>
             <point key="canvasLocation" x="1409.5" y="349.5"/>
         </scene>
-        <!--Contatos Table View Controller-->
+        <!--Contacts Table View Controller-->
         <scene sceneID="P19-Ag-ORr">
             <objects>
-                <tableViewController id="tyC-jJ-Abf" customClass="ContatosTableViewController" sceneMemberID="viewController">
+                <tableViewController id="tyC-jJ-Abf" customClass="ContactsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="T4J-PN-cKl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,8 +194,8 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VD2-Zv-rEL">
-                                            <rect key="frame" x="337" y="8" width="30" height="25"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Paper Plane-50.png" translatesAutoresizingMaskIntoConstraints="NO" id="VD2-Zv-rEL">
+                                            <rect key="frame" x="347" y="12" width="17" height="18"/>
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
@@ -233,12 +233,12 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1401.5" y="1228.5"/>
+            <point key="canvasLocation" x="1409.5" y="1172.5"/>
         </scene>
         <!--Send Mail View Controller-->
         <scene sceneID="ZJO-m7-pEa">
             <objects>
-                <viewController storyboardIdentifier="sendID" id="og2-1X-kfQ" customClass="sendMailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sendID" id="og2-1X-kfQ" customClass="SendMailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vwz-Xj-06g"/>
                         <viewControllerLayoutGuide type="bottom" id="k8N-Va-cit"/>
@@ -265,8 +265,14 @@
                                     <action selector="showEmail:" destination="og2-1X-kfQ" eventType="touchUpInside" id="JxA-dz-hrC"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5y-D8-ypJ">
+                                <rect key="frame" x="16" y="142" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsg-6b-j0E">
-                                <rect key="frame" x="16" y="165" width="343" height="21"/>
+                                <rect key="frame" x="16" y="171" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                 <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -278,16 +284,17 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="contactLabel" destination="tsg-6b-j0E" id="G2Z-Be-OE5"/>
+                        <outlet property="nomeLabel" destination="E5y-D8-ypJ" id="V0b-Fh-3qG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KgO-iJ-zIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2322.5" y="1188.5"/>
+            <point key="canvasLocation" x="1900.5" y="756.5"/>
         </scene>
-        <!--Sing Up View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="jQg-JI-B2V">
             <objects>
-                <viewController storyboardIdentifier="singUpView" id="tXz-I7-cG1" customClass="SingUpViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="singUpView" id="tXz-I7-cG1" customClass="SignUpViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vsz-Su-xRU"/>
                         <viewControllerLayoutGuide type="bottom" id="QUK-BU-7pa"/>
@@ -449,6 +456,17 @@
                     <view key="view" contentMode="scaleToFill" id="z9c-da-uVa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainBackground.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1pB-gb-B0F">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3Z-iw-XGr">
+                                <rect key="frame" x="16" y="60" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="Search-32.png" id="2mT-Ha-IhK"/>
@@ -469,6 +487,17 @@
                     <view key="view" contentMode="scaleToFill" id="EyS-51-vhU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainBackground.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uUW-gR-j0W">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWo-5d-WhJ">
+                                <rect key="frame" x="16" y="51" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="E-mail" image="Email-32.png" id="7nc-s4-q8r"/>
@@ -476,23 +505,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yvx-5d-QpN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="861.5" y="2679.5"/>
+            <point key="canvasLocation" x="909.5" y="2823.5"/>
         </scene>
         <!--Logout-->
         <scene sceneID="36G-r1-Nxw">
             <objects>
-                <viewController id="4qU-Xi-vGp" customClass="logoutViewController" sceneMemberID="viewController">
+                <viewController id="4qU-Xi-vGp" customClass="LogOutViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="evw-4J-gNr"/>
                         <viewControllerLayoutGuide type="bottom" id="mPA-Fa-iZz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2B6-rF-OVD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainBackground.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="r4N-cK-cbi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Logout" image="Exit-32.png" id="xqG-RS-oRX"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K5r-7i-1rI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -503,9 +537,9 @@
         <scene sceneID="Zuk-bQ-fx9">
             <objects>
                 <tabBarController id="hac-Na-me5" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="ngl-EK-dkW">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="ngl-EK-dkW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -519,13 +553,14 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x10-BQ-S5V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="856.5" y="1825.5"/>
+            <point key="canvasLocation" x="909.5" y="1957.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="Contacts-32.png" width="32" height="32"/>
         <image name="Email-32.png" width="32" height="32"/>
         <image name="Exit-32.png" width="32" height="32"/>
+        <image name="Paper Plane-50.png" width="50" height="50"/>
         <image name="Search-32.png" width="32" height="32"/>
         <image name="buttonOrange.png" width="150" height="50"/>
         <image name="mainBackground.jpg" width="750" height="1334"/>

@@ -1,5 +1,5 @@
 //
-//  logoutViewController.h
+//  LogOutViewController.h
 //  weAppLoginWebService
 //
 //  Created by Paulo Henrique Leite on 3/25/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface logoutViewController : UIViewController
+@interface LogOutViewController : UIViewController
 
 @end

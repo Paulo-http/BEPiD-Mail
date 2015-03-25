@@ -1,15 +1,15 @@
 //
-//  SingInViewController.m
+//  SignInViewController.m
 //  weAppLoginWebService
 //
 //  Created by Paulo Henrique Leite on 3/23/15.
 //  Copyright (c) 2015 Humberto Vieira de Castro. All rights reserved.
 //
 
-#import "SingInViewController.h"
+#import "SignInViewController.h"
 #import "Usuario.h"
 
-@interface SingInViewController ()
+@interface SignInViewController ()
 
 //  textfield SingIn View
 @property (weak, nonatomic) IBOutlet UITextField *userNameSingIn;
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation SingInViewController
+@implementation SignInViewController
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [self.userNameSingIn resignFirstResponder];
@@ -43,7 +43,7 @@
         new = [users objectAtIndex:i];
         if([self.userNameSingIn.text isEqual: new.user] && [self.passwordSingIn.text isEqual: new.senha]) {
             UIStoryboard *tela = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-            SingInViewController *view = [tela instantiateViewControllerWithIdentifier:@"homeView"];
+            SignInViewController *view = [tela instantiateViewControllerWithIdentifier:@"homeView"];
             view.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
             [self presentViewController:view animated:YES completion:nil];
         }

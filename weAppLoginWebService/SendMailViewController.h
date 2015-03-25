@@ -1,5 +1,5 @@
 //
-//  sendMailViewController.h
+//  SendMailViewController.h
 //  weAppLoginWebService
 //
 //  Created by Paulo Henrique Leite on 3/25/15.
@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "Usuario.h"
 
-@interface sendMailViewController : UIViewController
+@interface SendMailViewController : UIViewController
 - (id)initWithUser:(Usuario *)u;
 @end

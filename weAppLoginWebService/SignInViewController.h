@@ -1,5 +1,5 @@
 //
-//  SingUpViewController.h
+//  SignInViewController.h
 //  weAppLoginWebService
 //
 //  Created by Paulo Henrique Leite on 3/23/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SingUpViewController : UIViewController
+@interface SignInViewController : UIViewController
 
 @end

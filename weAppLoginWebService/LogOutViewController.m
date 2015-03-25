@@ -1,44 +1,33 @@
 //
-//  sendMailViewController.m
+//  LogOutViewController.m
 //  weAppLoginWebService
 //
 //  Created by Paulo Henrique Leite on 3/25/15.
 //  Copyright (c) 2015 Humberto Vieira de Castro. All rights reserved.
 //
 
-#import "sendMailViewController.h"
-#import "ContatosTableViewController.h"
+#import "LogOutViewController.h"
 
-@interface sendMailViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *contactLabel;
+@interface LogOutViewController ()
 
 @end
 
-@implementation sendMailViewController
-Usuario *userSend;
+@implementation LogOutViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.contactLabel.text = userSend.email;
     // Do any additional setup after loading the view.
-}
-
-
-- (id)initWithUser:(Usuario *)u {
-    self = [super init];
-    if(self){
-        userSend = u;
-    }
-    return self;
+    
+    UIStoryboard * tela = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UINavigationController * view = [tela instantiateViewControllerWithIdentifier:@"rootID"];
+    view.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    [self presentViewController:view animated:YES completion:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-    self.contactLabel.text = userSend.email;
-}
-
-- (IBAction)showEmail:(id)sender {
 }
 
 /*

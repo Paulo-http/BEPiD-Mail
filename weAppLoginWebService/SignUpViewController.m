@@ -1,15 +1,15 @@
 //
-//  SingUpViewController.m
+//  SignUpViewController.m
 //  weAppLoginWebService
 //
 //  Created by Paulo Henrique Leite on 3/23/15.
 //  Copyright (c) 2015 Humberto Vieira de Castro. All rights reserved.
 //
 
-#import "SingUpViewController.h"
+#import "SignUpViewController.h"
 #import "Usuario.h"
 
-@interface SingUpViewController ()
+@interface SignUpViewController ()
 //  SingUp TextFields
 @property (weak, nonatomic) IBOutlet UITextField *userNameSingUp;
 @property (weak, nonatomic) IBOutlet UITextField *passwordSingUp;
@@ -21,7 +21,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *notificationSingUp;
 @end
 
-@implementation SingUpViewController
+@implementation SignUpViewController
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [self.userNameSingUp resignFirstResponder];
@@ -53,7 +53,7 @@
         [new insereUsuario: new];
         
         UIStoryboard * tela = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        SingUpViewController * view = [tela instantiateViewControllerWithIdentifier:@"homeView"];
+        SignUpViewController * view = [tela instantiateViewControllerWithIdentifier:@"homeView"];
         view.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
         [self presentViewController:view animated:YES completion:nil];
         
