@@ -22,7 +22,6 @@ Usuario *userSend;
     [super viewDidLoad];
     self.contactLabel.text = userSend.email;
     self.nomeLabel.text = userSend.user;
-    // Do any additional setup after loading the view.
 }
 
 
@@ -36,21 +35,12 @@ Usuario *userSend;
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
     self.contactLabel.text = userSend.email;
 }
 
 - (IBAction)showEmail:(id)sender {
+    NSLog(@"Falta enviar o email!");
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

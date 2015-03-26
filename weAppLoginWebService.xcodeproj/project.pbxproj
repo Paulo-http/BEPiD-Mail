@@ -155,6 +155,7 @@
 				75D98EF71AC371EF002B6D9A /* Model */,
 				DB024E531ABC839C009E3C54 /* AppDelegate.h */,
 				DB024E541ABC839C009E3C54 /* AppDelegate.m */,
+				DB024E511ABC839C009E3C54 /* main.m */,
 				DB024E591ABC839C009E3C54 /* Main.storyboard */,
 				DB024E5E1ABC839C009E3C54 /* LaunchScreen.xib */,
 				DB024E4F1ABC839C009E3C54 /* Supporting Files */,
@@ -175,7 +176,6 @@
 				DBDC2FBF1AC3353500B4BA92 /* Exit-32.png */,
 				DBDC2FBB1AC3347600B4BA92 /* Search-32.png */,
 				DB024E501ABC839C009E3C54 /* Info.plist */,
-				DB024E511ABC839C009E3C54 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

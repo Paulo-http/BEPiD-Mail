@@ -43,7 +43,7 @@
         new = [users objectAtIndex:i];
         if([self.userNameSingIn.text isEqual: new.user] && [self.passwordSingIn.text isEqual: new.senha]) {
             UIStoryboard *tela = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-            SignInViewController *view = [tela instantiateViewControllerWithIdentifier:@"homeView"];
+            SignInViewController *view = [tela instantiateViewControllerWithIdentifier:@"homeViewID"];
             view.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
             [self presentViewController:view animated:YES completion:nil];
         }
