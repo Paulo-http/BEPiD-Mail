@@ -10,7 +10,7 @@
 #import "Usuario.h"
 
 @interface SearchTableViewController ()
-@property (strong, nonatomic) IBOutlet UITableView *searchTableView;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchTableView;
 
 @end
 

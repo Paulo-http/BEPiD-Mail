@@ -428,6 +428,9 @@
                     </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="searchTableView" destination="BsO-4K-GH0" id="uVj-H5-1BL"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gnO-Zi-1aD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
