@@ -8,10 +8,12 @@
 
 #import "SendMailViewController.h"
 #import "ContactsTableViewController.h"
+#import "SearchTableViewController.h"
 
 @interface SendMailViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *contactLabel;
 @property (weak, nonatomic) IBOutlet UILabel *nomeLabel;
+@property (weak, nonatomic) IBOutlet UITextView *sendMailTextView;
 
 @end
 
@@ -33,6 +35,10 @@ Usuario *userSend;
     return self;
 }
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self.sendMailTextView resignFirstResponder];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     self.contactLabel.text = userSend.email;
@@ -40,6 +46,10 @@ Usuario *userSend;
 
 - (IBAction)showEmail:(id)sender {
     NSLog(@"Falta enviar o email!");
+    UIStoryboard * tela = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    SearchTableViewController * view = [tela instantiateViewControllerWithIdentifier:@"homeViewID"];
+    view.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    [self presentViewController:view animated:YES completion:nil];
 }
 
 

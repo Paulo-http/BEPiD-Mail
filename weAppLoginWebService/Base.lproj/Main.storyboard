@@ -150,7 +150,7 @@
             <objects>
                 <navigationController id="WUo-pv-W9d" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Contacts" image="Contacts-32.png" id="fok-pf-8oR"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="m86-uI-XYj">
@@ -177,7 +177,7 @@
             <objects>
                 <tableViewController id="tyC-jJ-Abf" customClass="ContactsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="T4J-PN-cKl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -237,7 +237,6 @@
         <!--Send Mail View Controller-->
         <scene sceneID="ZJO-m7-pEa">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KgO-iJ-zIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="sendID" id="og2-1X-kfQ" customClass="SendMailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vwz-Xj-06g"/>
@@ -261,27 +260,28 @@
                                     <action selector="showEmail:" destination="og2-1X-kfQ" eventType="touchUpInside" id="JxA-dz-hrC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5y-D8-ypJ">
-                                <rect key="frame" x="16" y="124" width="343" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsg-6b-j0E">
-                                <rect key="frame" x="16" y="163" width="343" height="21"/>
+                                <rect key="frame" x="16" y="145" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                 <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="200" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write your message:" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J0b-Wg-6dB">
-                                <rect key="frame" x="16" y="239" width="343" height="200"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Send Mail" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aj-iE-iMP">
-                                <rect key="frame" x="16" y="55" width="343" height="21"/>
+                                <rect key="frame" x="16" y="34" width="343" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LMa-LX-oiY">
+                                <rect key="frame" x="16" y="188" width="343" height="182"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5y-D8-ypJ">
+                                <rect key="frame" x="16" y="116" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -294,8 +294,10 @@
                     <connections>
                         <outlet property="contactLabel" destination="tsg-6b-j0E" id="G2Z-Be-OE5"/>
                         <outlet property="nomeLabel" destination="E5y-D8-ypJ" id="V0b-Fh-3qG"/>
+                        <outlet property="sendMailTextView" destination="LMa-LX-oiY" id="dZL-1E-QON"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KgO-iJ-zIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1940.5" y="1064.5"/>
         </scene>
@@ -384,12 +386,16 @@
         <!--Search Table View Controller-->
         <scene sceneID="459-lJ-kTI">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gnO-Zi-1aD" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="xjh-kb-HYJ" customClass="SearchTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="jPt-8f-w2s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="BsO-4K-GH0">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="QoH-bW-LBg">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -419,18 +425,79 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="bJY-eC-2AK">
                         <nil key="title"/>
-                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Contact:" minimumFontSize="17" id="Evi-oD-JEA">
-                            <rect key="frame" x="48" y="7" width="280" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
                     </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gnO-Zi-1aD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="401.5" y="2679.5"/>
+            <point key="canvasLocation" x="909.5" y="2669.5"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Yl1-ZU-Nm2">
+            <objects>
+                <navigationController id="O7T-yN-vEY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="Home-32.png" id="xSK-MU-47T"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oVj-ve-Jdf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="U4B-nW-Nsf" kind="relationship" relationship="rootViewController" id="Uys-0k-Jsc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EUZ-KB-Jdi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="401.5" y="1883.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Yxk-lE-2wn">
+            <objects>
+                <viewController id="U4B-nW-Nsf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mBj-Q3-3BA"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hfy-gH-tji"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="32D-Hl-iGB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainBackground.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nnv-45-CD3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="n6G-ca-M8l">
+                                <rect key="frame" x="152" y="145" width="70" height="65"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BEPiD Mail" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xni-4s-Rmn">
+                                <rect key="frame" x="16" y="250" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bem Vindo!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0P-rJ-vxC">
+                                <rect key="frame" x="16" y="303" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIb-Kq-7uz">
+                                <rect key="frame" x="16" y="332" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="idJ-Gl-O3m"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lxI-WK-EPr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="401.5" y="2669.5"/>
         </scene>
         <!--Search-->
         <scene sceneID="s23-T0-xbH">
@@ -449,33 +516,56 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nxv-2o-VLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="401.5" y="1855.5"/>
+            <point key="canvasLocation" x="909.5" y="1883.5"/>
         </scene>
-        <!--E-mail-->
-        <scene sceneID="7eh-WA-Zzm">
+        <!--Emails Table View Controller-->
+        <scene sceneID="DTJ-cv-uUS">
             <objects>
-                <viewController id="N1l-Mz-tdK" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="GTV-Be-hqI"/>
-                        <viewControllerLayoutGuide type="bottom" id="mrf-dj-OyD"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="EyS-51-vhU">
+                <tableViewController id="og9-YP-dT3" customClass="EmailsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="R07-zq-NKt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainBackground.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uUW-gR-j0W">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="E-mail" image="Email-32.png" id="7nc-s4-q8r"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="uvJ-Ox-rzU">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uvJ-Ox-rzU" id="nbb-el-4cV">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="og9-YP-dT3" id="MaZ-Tz-Q7f"/>
+                            <outlet property="delegate" destination="og9-YP-dT3" id="xGd-Mn-QiE"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="rqf-GT-HTY"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yvx-5d-QpN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dOU-NC-2ra" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="909.5" y="1855.5"/>
+            <point key="canvasLocation" x="1409.5" y="2663.5"/>
+        </scene>
+        <!--E-mails-->
+        <scene sceneID="5d6-fv-XOd">
+            <objects>
+                <navigationController id="g7N-Lw-U7o" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="E-mails" image="Email-32.png" id="0Tl-ST-H49"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E4K-XG-7rN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="og9-YP-dT3" kind="relationship" relationship="rootViewController" id="fcc-ZJ-vmC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bOV-tu-5l3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1409.5" y="1883.5"/>
         </scene>
         <!--Logout-->
         <scene sceneID="36G-r1-Nxw">
@@ -502,7 +592,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K5r-7i-1rI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1409.5" y="1855.5"/>
+            <point key="canvasLocation" x="1940.5" y="1883.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Zuk-bQ-fx9">
@@ -517,8 +607,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <segue destination="O7T-yN-vEY" kind="relationship" relationship="viewControllers" id="G33-py-ch0"/>
                         <segue destination="l7A-hy-XVB" kind="relationship" relationship="viewControllers" id="MaE-va-fSM"/>
-                        <segue destination="N1l-Mz-tdK" kind="relationship" relationship="viewControllers" id="PYa-vV-63k"/>
+                        <segue destination="g7N-Lw-U7o" kind="relationship" relationship="viewControllers" id="ER4-Tr-gcJ"/>
                         <segue destination="WUo-pv-W9d" kind="relationship" relationship="viewControllers" id="SZY-DO-7sT"/>
                         <segue destination="4qU-Xi-vGp" kind="relationship" relationship="viewControllers" id="Rqc-PK-7Av"/>
                     </connections>
@@ -532,6 +623,8 @@
         <image name="Contacts-32.png" width="32" height="32"/>
         <image name="Email-32.png" width="32" height="32"/>
         <image name="Exit-32.png" width="32" height="32"/>
+        <image name="Home-32.png" width="32" height="32"/>
+        <image name="Icon.png" width="57" height="57"/>
         <image name="Paper Plane-50.png" width="50" height="50"/>
         <image name="Search-32.png" width="32" height="32"/>
         <image name="buttonOrange.png" width="150" height="50"/>

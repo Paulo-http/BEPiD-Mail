@@ -17,6 +17,8 @@
 		758906081AC35DBE007BF3B9 /* buttonOrange.png in Resources */ = {isa = PBXBuildFile; fileRef = 758906071AC35DBE007BF3B9 /* buttonOrange.png */; };
 		75D98EF61AC370C5002B6D9A /* LogOutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D98EF51AC370C5002B6D9A /* LogOutViewController.m */; };
 		75F785E61AC32851007265C7 /* SendMailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F785E51AC32851007265C7 /* SendMailViewController.m */; };
+		75FB4E7B1AC4752E00FC8B58 /* Home-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB4E7A1AC4752E00FC8B58 /* Home-32.png */; };
+		75FB4E7E1AC47A4200FC8B58 /* EmailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB4E7D1AC47A4200FC8B58 /* EmailsTableViewController.m */; };
 		DB024E521ABC839C009E3C54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB024E511ABC839C009E3C54 /* main.m */; };
 		DB024E551ABC839C009E3C54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB024E541ABC839C009E3C54 /* AppDelegate.m */; };
 		DB024E581ABC839C009E3C54 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB024E571ABC839C009E3C54 /* ViewController.m */; };
@@ -58,6 +60,9 @@
 		75D98EF51AC370C5002B6D9A /* LogOutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogOutViewController.m; sourceTree = "<group>"; };
 		75F785E41AC32851007265C7 /* SendMailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendMailViewController.h; sourceTree = "<group>"; };
 		75F785E51AC32851007265C7 /* SendMailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendMailViewController.m; sourceTree = "<group>"; };
+		75FB4E7A1AC4752E00FC8B58 /* Home-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home-32.png"; sourceTree = "<group>"; };
+		75FB4E7C1AC47A4200FC8B58 /* EmailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmailsTableViewController.h; path = ../EmailsTableViewController.h; sourceTree = "<group>"; };
+		75FB4E7D1AC47A4200FC8B58 /* EmailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmailsTableViewController.m; path = ../EmailsTableViewController.m; sourceTree = "<group>"; };
 		DB024E4C1ABC839C009E3C54 /* weAppLoginWebService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weAppLoginWebService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB024E501ABC839C009E3C54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB024E511ABC839C009E3C54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -109,6 +114,8 @@
 		75D98EF81AC37203002B6D9A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				75FB4E7C1AC47A4200FC8B58 /* EmailsTableViewController.h */,
+				75FB4E7D1AC47A4200FC8B58 /* EmailsTableViewController.m */,
 				252C10FA1AC43AD800DBAF69 /* SearchTableViewController.h */,
 				252C10FB1AC43AD800DBAF69 /* SearchTableViewController.m */,
 				754A83DC1AC09FFF0085FB3C /* ContactsTableViewController.h */,
@@ -173,6 +180,7 @@
 			children = (
 				DBDC2FBD1AC3353500B4BA92 /* Contacts-32.png */,
 				DB024E5C1ABC839C009E3C54 /* Icon@2x.png */,
+				75FB4E7A1AC4752E00FC8B58 /* Home-32.png */,
 				752914C01AC37E6700715F85 /* Paper Plane-50.png */,
 				DBDC2FBE1AC3353500B4BA92 /* Email-32.png */,
 				758906031AC35A3B007BF3B9 /* introBackground.jpg */,
@@ -291,6 +299,7 @@
 				DBDC2FBC1AC3347600B4BA92 /* Search-32.png in Resources */,
 				DB024E601ABC839C009E3C54 /* LaunchScreen.xib in Resources */,
 				DBDC2FC11AC3353500B4BA92 /* Email-32.png in Resources */,
+				75FB4E7B1AC4752E00FC8B58 /* Home-32.png in Resources */,
 				758906051AC35A3B007BF3B9 /* introBackground.jpg in Resources */,
 				DB024E5D1ABC839C009E3C54 /* Icon@2x.png in Resources */,
 			);
@@ -314,6 +323,7 @@
 				75D98EF61AC370C5002B6D9A /* LogOutViewController.m in Sources */,
 				754A83DE1AC09FFF0085FB3C /* ContactsTableViewController.m in Sources */,
 				252C10FC1AC43AD800DBAF69 /* SearchTableViewController.m in Sources */,
+				75FB4E7E1AC47A4200FC8B58 /* EmailsTableViewController.m in Sources */,
 				DB024E581ABC839C009E3C54 /* ViewController.m in Sources */,
 				754A83D51AC087F40085FB3C /* SignInViewController.m in Sources */,
 				DB024E551ABC839C009E3C54 /* AppDelegate.m in Sources */,
