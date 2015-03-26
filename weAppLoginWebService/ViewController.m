@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.usernameLabel.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"UsernameID"];
 }
 
 - (void)didReceiveMemoryWarning {

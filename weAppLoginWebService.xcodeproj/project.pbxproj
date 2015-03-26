@@ -12,6 +12,7 @@
 		754A83D21AC086450085FB3C /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 754A83D11AC086450085FB3C /* SignUpViewController.m */; };
 		754A83D51AC087F40085FB3C /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 754A83D41AC087F40085FB3C /* SignInViewController.m */; };
 		754A83DE1AC09FFF0085FB3C /* ContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 754A83DD1AC09FFF0085FB3C /* ContactsTableViewController.m */; };
+		7577DD9E1AC4CAFA00CE99F1 /* MailBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7577DD9D1AC4CAFA00CE99F1 /* MailBoxViewController.m */; };
 		758906051AC35A3B007BF3B9 /* introBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 758906031AC35A3B007BF3B9 /* introBackground.jpg */; };
 		758906061AC35A3B007BF3B9 /* mainBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 758906041AC35A3B007BF3B9 /* mainBackground.jpg */; };
 		758906081AC35DBE007BF3B9 /* buttonOrange.png in Resources */ = {isa = PBXBuildFile; fileRef = 758906071AC35DBE007BF3B9 /* buttonOrange.png */; };
@@ -54,6 +55,8 @@
 		754A83D41AC087F40085FB3C /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		754A83DC1AC09FFF0085FB3C /* ContactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactsTableViewController.h; path = ../ContactsTableViewController.h; sourceTree = "<group>"; };
 		754A83DD1AC09FFF0085FB3C /* ContactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactsTableViewController.m; path = ../ContactsTableViewController.m; sourceTree = "<group>"; };
+		7577DD9C1AC4CAFA00CE99F1 /* MailBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MailBoxViewController.h; path = ../MailBoxViewController.h; sourceTree = "<group>"; };
+		7577DD9D1AC4CAFA00CE99F1 /* MailBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MailBoxViewController.m; path = ../MailBoxViewController.m; sourceTree = "<group>"; };
 		758906031AC35A3B007BF3B9 /* introBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = introBackground.jpg; path = res/introBackground.jpg; sourceTree = "<group>"; };
 		758906041AC35A3B007BF3B9 /* mainBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mainBackground.jpg; path = res/mainBackground.jpg; sourceTree = "<group>"; };
 		758906071AC35DBE007BF3B9 /* buttonOrange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonOrange.png; path = res/buttonOrange.png; sourceTree = "<group>"; };
@@ -125,6 +128,8 @@
 				252C10FB1AC43AD800DBAF69 /* SearchTableViewController.m */,
 				754A83DC1AC09FFF0085FB3C /* ContactsTableViewController.h */,
 				754A83DD1AC09FFF0085FB3C /* ContactsTableViewController.m */,
+				7577DD9C1AC4CAFA00CE99F1 /* MailBoxViewController.h */,
+				7577DD9D1AC4CAFA00CE99F1 /* MailBoxViewController.m */,
 				DB024E561ABC839C009E3C54 /* ViewController.h */,
 				DB024E571ABC839C009E3C54 /* ViewController.m */,
 				75F785E41AC32851007265C7 /* SendMailViewController.h */,
@@ -317,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB024E771ABC857A009E3C54 /* Usuario.m in Sources */,
+				7577DD9E1AC4CAFA00CE99F1 /* MailBoxViewController.m in Sources */,
 				75D98EF61AC370C5002B6D9A /* LogOutViewController.m in Sources */,
 				754A83DE1AC09FFF0085FB3C /* ContactsTableViewController.m in Sources */,
 				252C10FC1AC43AD800DBAF69 /* SearchTableViewController.m in Sources */,

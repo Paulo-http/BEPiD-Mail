@@ -49,6 +49,8 @@
             [[NSUserDefaults standardUserDefaults] setInteger:new.id_usuario forKey:@"UserID"];
             [[NSUserDefaults standardUserDefaults] synchronize];
             
+            [[NSUserDefaults standardUserDefaults] setObject:new.user forKey:@"UsernameID"];
+            [[NSUserDefaults standardUserDefaults] synchronize];
             
             UIStoryboard * tela = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
             SignInViewController * view = [tela instantiateViewControllerWithIdentifier:@"homeViewID"];

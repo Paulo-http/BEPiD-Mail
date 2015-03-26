@@ -52,6 +52,9 @@
         
         [new insereUsuario: new];
         
+        [[NSUserDefaults standardUserDefaults] setObject:new.user forKey:@"UsernameID"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
         UIStoryboard * tela = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         SignUpViewController * view = [tela instantiateViewControllerWithIdentifier:@"homeViewID"];
         view.modalTransitionStyle = UIModalTransitionStyleCoverVertical;

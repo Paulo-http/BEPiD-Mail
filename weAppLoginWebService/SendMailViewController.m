@@ -39,6 +39,7 @@ Usuario *userSend;
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [self.sendMailTextView resignFirstResponder];
+    [self.assuntoTextView resignFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning {

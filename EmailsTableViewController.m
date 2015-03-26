@@ -7,15 +7,23 @@
 //
 
 #import "EmailsTableViewController.h"
+#import "MailBoxViewController.h"
+#import "Email.h"
 
 @interface EmailsTableViewController ()
 
 @end
 
 @implementation EmailsTableViewController
+Email *e;
+NSMutableArray *arrayEmail;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    e = [[Email alloc]init];
+    NSString *username = [[NSUserDefaults standardUserDefaults] objectForKey:@"UsernameID"];
+    NSLog(@"%@", username);
+    arrayEmail = [e ultimosEmails:username];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,7 +37,34 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return arrayEmail.count;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"emailSending" forIndexPath:indexPath];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"emailSending"];
+    }
+    
+    e = [arrayEmail objectAtIndex:indexPath.row];
+
+    UILabel *nameLabel = (UILabel *)[cell viewWithTag:101];
+    nameLabel.text = e.assunto;
+    NSLog(@"%@", e.assunto);
+    UILabel *emailLabel = (UILabel *)[cell viewWithTag:102];
+    emailLabel.text = e.texto;
+    NSLog(@"%@", e.texto);
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+//    self.contactUser = [users objectAtIndex:indexPath.row];
+//    UIStoryboard *main = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+//    SendMailViewController *sendMail = [main instantiateViewControllerWithIdentifier:@"sendID"];
+//    sendMail = [[SendMailViewController alloc]initWithUser:self.contactUser];
+//    [self performSegueWithIdentifier:@"contactsSegue" sender:self];
 }
 
 /*
