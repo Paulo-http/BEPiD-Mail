@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Usuario.h"
 
 @interface SearchTableViewController : UITableViewController
-
+@property (nonatomic) Usuario* contactUser;
 @end

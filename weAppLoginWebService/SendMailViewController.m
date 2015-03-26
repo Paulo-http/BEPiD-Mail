@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *contactLabel;
 @property (weak, nonatomic) IBOutlet UILabel *nomeLabel;
 @property (weak, nonatomic) IBOutlet UITextView *sendMailTextView;
+@property (weak, nonatomic) IBOutlet UITextView *assuntoTextView;
 
 @end
 
@@ -45,7 +46,8 @@ Usuario *userSend;
 }
 
 - (IBAction)showEmail:(id)sender {
-    NSLog(@"Falta enviar o email!");
+    NSLog(@"%@", self.assuntoTextView.text);
+    NSLog(@"%@", self.sendMailTextView.text);
     UIStoryboard * tela = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     SearchTableViewController * view = [tela instantiateViewControllerWithIdentifier:@"homeViewID"];
     view.modalTransitionStyle = UIModalTransitionStyleCoverVertical;

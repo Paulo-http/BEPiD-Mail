@@ -19,27 +19,18 @@ Usuario *new;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     new = [[Usuario alloc]init];
     users = [new retornaUsuarios];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    // Return the number of sections.
     return 1;
 }
 
@@ -47,35 +38,30 @@ Usuario *new;
     Usuario *new = [[Usuario alloc]init];
     NSMutableArray *users = [[NSMutableArray alloc]init];
     users = [new retornaUsuarios];
-   
     return users.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Contatos" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Contacts" forIndexPath:indexPath];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Contatos"];
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Contacts"];
     }
      new = [users objectAtIndex:indexPath.row];
      UILabel *nameLabel = (UILabel *)[cell viewWithTag:101];
      nameLabel.text = new.user;
      UILabel *emailLabel = (UILabel *)[cell viewWithTag:102];
      emailLabel.text = new.email;
-    NSLog(@"%ld", indexPath.row);
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
     self.contactUser = [users objectAtIndex:indexPath.row];
     UIStoryboard *main = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
     SendMailViewController *sendMail = [main instantiateViewControllerWithIdentifier:@"sendID"];
     sendMail = [[SendMailViewController alloc]initWithUser:self.contactUser];
-    [self performSegueWithIdentifier:@"mailSegue" sender:self];
-
-
+    [self performSegueWithIdentifier:@"contactsSegue" sender:self];
 }
 
 /*

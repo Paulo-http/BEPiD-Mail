@@ -7,13 +7,17 @@
 //
 
 #import "SignInViewController.h"
-#import "Usuario.h"
+#import "ViewController.h"
 
 @interface SignInViewController ()
 
 //  textfield SingIn View
-@property (weak, nonatomic) IBOutlet UITextField *userNameSingIn;
+
 @property (weak, nonatomic) IBOutlet UITextField *passwordSingIn;
+@property (weak, nonatomic) IBOutlet UITextField *userNameSingIn;
+
+//  label SingIn View
+@property (weak, nonatomic) IBOutlet UILabel *checkSignInLabel;
 
 //  buttons SingIn View
 @property (weak, nonatomic) IBOutlet UIButton *continueSingIn;
@@ -42,11 +46,14 @@
     for(int i=0; i<users.count; i++) {
         new = [users objectAtIndex:i];
         if([self.userNameSingIn.text isEqual: new.user] && [self.passwordSingIn.text isEqual: new.senha]) {
-            UIStoryboard *tela = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-            SignInViewController *view = [tela instantiateViewControllerWithIdentifier:@"homeViewID"];
+            UIStoryboard * tela = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            SignInViewController * view = [tela instantiateViewControllerWithIdentifier:@"homeViewID"];
             view.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
             [self presentViewController:view animated:YES completion:nil];
+            break;
         }
+        if(i+1>=users.count && ![self.userNameSingIn isEqual:new.user])
+            self.checkSignInLabel.text = @"Username or password incorrect";
     }
 }
 

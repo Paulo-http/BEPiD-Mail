@@ -7,23 +7,23 @@
 //
 
 #import "SearchTableViewController.h"
-#import "Usuario.h"
+#import "SendMailViewController.h"
 
 @interface SearchTableViewController ()
 @property (weak, nonatomic) IBOutlet UISearchBar *searchTableView;
 
 @end
 
+
+
 @implementation SearchTableViewController
+Usuario *new;
+NSMutableArray *users;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
- 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    new = [[Usuario alloc]init];
+    users = [new retornaUsuarios];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,35 +42,34 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    Usuario *new = [[Usuario alloc]init];
+    NSMutableArray *users = [[NSMutableArray alloc]init];
+    users = [new retornaUsuarios];
+    return users.count;
 }
 
 
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Contatos" forIndexPath:indexPath];
-//    
-//    if (cell == nil) {
-//        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Contatos"];
-//    }
-//    new = [users objectAtIndex:indexPath.row];
-//    UILabel *nameLabel = (UILabel *)[cell viewWithTag:101];
-//    nameLabel.text = new.user;
-//    UILabel *emailLabel = (UILabel *)[cell viewWithTag:102];
-//    emailLabel.text = new.email;
-//    NSLog(@"%ld", indexPath.row);
-//    return cell;
-//}
-//
-//-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-//    
-//    self.contactUser = [users objectAtIndex:indexPath.row];
-//    UIStoryboard *main = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
-//    SendMailViewController *sendMail = [main instantiateViewControllerWithIdentifier:@"sendID"];
-//    sendMail = [[SendMailViewController alloc]initWithUser:self.contactUser];
-//    [self performSegueWithIdentifier:@"mailSegue" sender:self];
-//    
-//    
-//}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SearchContacts" forIndexPath:indexPath];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"SearchContacts"];
+    }
+    new = [users objectAtIndex:indexPath.row];
+    UILabel *nameSearch = (UILabel *)[cell viewWithTag:101];
+    nameSearch.text = new.user;
+    UILabel *emailSearch = (UILabel *)[cell viewWithTag:102];
+    emailSearch.text = new.email;
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    self.contactUser = [users objectAtIndex:indexPath.row];
+    UIStoryboard *main = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    SendMailViewController *sendMail = [main instantiateViewControllerWithIdentifier:@"sendID"];
+    sendMail = [[SendMailViewController alloc]initWithUser:self.contactUser];
+    [self performSegueWithIdentifier:@"searchSegue" sender:self];
+}
 
 /*
 // Override to support conditional editing of the table view.
