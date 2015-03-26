@@ -14,7 +14,7 @@
 		}
 		//ESSA FUNCAO RETORNA A LISTA DE USUARIOS NO BANCO	
 		else if($tipo_operacao == 2){
-			$query = "SELECT * FROM `usuario`";
+			$query = "SELECT * FROM `usuario` ORDER BY `user`";
 			echo selectMySQL($query);
 		}
 		//BUSCAR USUARIO POR PALAVRA
@@ -32,11 +32,17 @@
 			$texto = $_GET['texto'];
 			$query = "INSERT INTO `email`(`id_email`, `id_usuario`, `id_receptor`, `assunto`, `texto`) VALUES (null,'".$id_usuario."','".$id_receptor."','".$assunto."','".$texto."')";
 			
-
 			echo updateMySQL($query);
 
 			enviaEmail($para, $assunto, $texto);
 
+		}
+		// BUSCA OS ULTIMOS 5 EMAILS DO USUARIO
+		else if ($tipo_operacao == 5)
+		{
+			$id_usuario = $_GET['id_usuario'];
+			$query = "SELECT * FROM `email` WHERE `id_usuario` = ".$id_usuario." ORDER BY `id_email` DESC LIMIT 0, 8";
+			echo selectMySQL($query);
 		}
 
 
