@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		252C10FC1AC43AD800DBAF69 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 252C10FB1AC43AD800DBAF69 /* SearchTableViewController.m */; };
 		752914C11AC37E6700715F85 /* Paper Plane-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 752914C01AC37E6700715F85 /* Paper Plane-50.png */; };
 		754A83D21AC086450085FB3C /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 754A83D11AC086450085FB3C /* SignUpViewController.m */; };
 		754A83D51AC087F40085FB3C /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 754A83D41AC087F40085FB3C /* SignInViewController.m */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		252C10FA1AC43AD800DBAF69 /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
+		252C10FB1AC43AD800DBAF69 /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
 		752914C01AC37E6700715F85 /* Paper Plane-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Paper Plane-50.png"; sourceTree = "<group>"; };
 		754A83D01AC086450085FB3C /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		754A83D11AC086450085FB3C /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
@@ -106,6 +109,8 @@
 		75D98EF81AC37203002B6D9A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				252C10FA1AC43AD800DBAF69 /* SearchTableViewController.h */,
+				252C10FB1AC43AD800DBAF69 /* SearchTableViewController.m */,
 				754A83DC1AC09FFF0085FB3C /* ContactsTableViewController.h */,
 				754A83DD1AC09FFF0085FB3C /* ContactsTableViewController.m */,
 				DB024E561ABC839C009E3C54 /* ViewController.h */,
@@ -308,6 +313,7 @@
 				DB024E771ABC857A009E3C54 /* Usuario.m in Sources */,
 				75D98EF61AC370C5002B6D9A /* LogOutViewController.m in Sources */,
 				754A83DE1AC09FFF0085FB3C /* ContactsTableViewController.m in Sources */,
+				252C10FC1AC43AD800DBAF69 /* SearchTableViewController.m in Sources */,
 				DB024E581ABC839C009E3C54 /* ViewController.m in Sources */,
 				754A83D51AC087F40085FB3C /* SignInViewController.m in Sources */,
 				DB024E551ABC839C009E3C54 /* AppDelegate.m in Sources */,
