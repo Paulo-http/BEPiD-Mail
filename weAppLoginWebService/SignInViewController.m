@@ -46,6 +46,10 @@
     for(int i=0; i<users.count; i++) {
         new = [users objectAtIndex:i];
         if([self.userNameSingIn.text isEqual: new.user] && [self.passwordSingIn.text isEqual: new.senha]) {
+            [[NSUserDefaults standardUserDefaults] setInteger:new.id_usuario forKey:@"UserID"];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+            
+            
             UIStoryboard * tela = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
             SignInViewController * view = [tela instantiateViewControllerWithIdentifier:@"homeViewID"];
             view.modalTransitionStyle = UIModalTransitionStyleCoverVertical;

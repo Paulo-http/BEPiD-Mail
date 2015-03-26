@@ -9,6 +9,7 @@
 #import "SendMailViewController.h"
 #import "ContactsTableViewController.h"
 #import "SearchTableViewController.h"
+#import "Email.h"
 
 @interface SendMailViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *contactLabel;
@@ -48,6 +49,20 @@ Usuario *userSend;
 - (IBAction)showEmail:(id)sender {
     NSLog(@"%@", self.assuntoTextView.text);
     NSLog(@"%@", self.sendMailTextView.text);
+    
+    NSInteger id_usuario_principal = [[NSUserDefaults standardUserDefaults] integerForKey:@"UserID"];
+    
+    Usuario *receptor = userSend;
+    
+    Email *e = [[Email alloc] init];
+    
+    e.id_usuario = (int)id_usuario_principal;
+    e.id_receptor = receptor.id_usuario;
+    
+    e.assunto = self.assuntoTextView.text;
+    e.texto = self.sendMailTextView.text;
+    
+    
     UIStoryboard * tela = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     SearchTableViewController * view = [tela instantiateViewControllerWithIdentifier:@"homeViewID"];
     view.modalTransitionStyle = UIModalTransitionStyleCoverVertical;

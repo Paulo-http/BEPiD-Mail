@@ -9,6 +9,7 @@
 #import "ContactsTableViewController.h"
 #import "Usuario.h"
 #import "SendMailViewController.h"
+#import "Email.h"
 
 @interface ContactsTableViewController ()
 @end
@@ -21,6 +22,14 @@ Usuario *new;
     [super viewDidLoad];
     new = [[Usuario alloc]init];
     users = [new retornaUsuarios];
+
+        
+    
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+    
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 

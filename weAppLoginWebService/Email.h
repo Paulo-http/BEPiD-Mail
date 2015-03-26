@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Usuario.h"
 
 @interface Email : NSObject
 
@@ -15,5 +16,7 @@
 @property (nonatomic) int id_receptor;
 @property (nonatomic) NSString *assunto;
 @property (nonatomic) NSString *texto;
+
+- (NSString *) enviaEmail:(NSString *)destinatario email:(Email *)email;
 
 @end

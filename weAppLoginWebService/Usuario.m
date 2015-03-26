@@ -16,6 +16,9 @@
     
     NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil ];
     
+
+    
+    
     //NSError** jsonParsingError = nil;
     
     NSArray *separaObjetos = [NSJSONSerialization JSONObjectWithData:response options:0 error:nil];
