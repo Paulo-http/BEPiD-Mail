@@ -8,6 +8,9 @@
 
 #import "SearchTableViewController.h"
 #import "SendMailViewController.h"
+#import "Usuario.h"
+
+@import UIKit;
 
 @interface SearchTableViewController ()
 @property (weak, nonatomic) IBOutlet UISearchBar *searchTableView;
@@ -24,6 +27,7 @@ NSMutableArray *users;
     [super viewDidLoad];
     new = [[Usuario alloc]init];
     users = [new retornaUsuarios];
+    self.searchTableView.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,11 +44,7 @@ NSMutableArray *users;
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    Usuario *new = [[Usuario alloc]init];
-    NSMutableArray *users = [[NSMutableArray alloc]init];
-    users = [new retornaUsuarios];
     return users.count;
 }
 
@@ -69,6 +69,12 @@ NSMutableArray *users;
     SendMailViewController *sendMail = [main instantiateViewControllerWithIdentifier:@"sendID"];
     sendMail = [[SendMailViewController alloc]initWithUser:self.contactUser];
     [self performSegueWithIdentifier:@"searchSegue" sender:self];
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    [users removeAllObjects];
+    users = [new buscaUsuariosPorNome:self.searchTableView.text];
+    [((UITableView *)self.view) reloadData];
 }
 
 /*

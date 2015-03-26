@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "Usuario.h"
 
-@interface SearchTableViewController : UITableViewController
+@interface SearchTableViewController : UITableViewController <UISearchBarDelegate>
 @property (nonatomic) Usuario* contactUser;
 @end

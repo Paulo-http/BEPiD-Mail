@@ -47,18 +47,12 @@ Usuario *userSend;
 }
 
 - (IBAction)showEmail:(id)sender {
-    NSLog(@"%@", self.assuntoTextView.text);
-    NSLog(@"%@", self.sendMailTextView.text);
-    
     NSInteger id_usuario_principal = [[NSUserDefaults standardUserDefaults] integerForKey:@"UserID"];
-    
     Usuario *receptor = userSend;
     
     Email *e = [[Email alloc] init];
-    
     e.id_usuario = (int)id_usuario_principal;
     e.id_receptor = receptor.id_usuario;
-    
     e.assunto = self.assuntoTextView.text;
     e.texto = self.sendMailTextView.text;
     
