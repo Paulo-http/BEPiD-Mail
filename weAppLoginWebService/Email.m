@@ -13,6 +13,7 @@
 
 - (NSString *) enviaEmail:(NSString *)destinatario email:(Email *)email
 {
+    email.assunto = [email.assunto stringByReplacingOccurrencesOfString:@" " withString:@"%20" ];
     email.texto = [email.texto stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
 
     
