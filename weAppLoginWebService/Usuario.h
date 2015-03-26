@@ -19,4 +19,5 @@
 - (NSString *) insereUsuario:(Usuario *)u;
 
 - (NSMutableArray *) buscaUsuariosPorNome:(NSString *) palavra;
+
 @end

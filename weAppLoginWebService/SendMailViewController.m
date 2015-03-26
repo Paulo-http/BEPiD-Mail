@@ -64,10 +64,14 @@ Usuario *userSend;
     
     [e enviaEmail:receptor.email email:e];
     
+
+    
     UIStoryboard * tela = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     SearchTableViewController * view = [tela instantiateViewControllerWithIdentifier:@"homeViewID"];
     view.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [self presentViewController:view animated:YES completion:nil];
+    
+    
 }
 
 

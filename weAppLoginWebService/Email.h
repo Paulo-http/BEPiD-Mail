@@ -19,4 +19,5 @@
 
 - (NSString *) enviaEmail:(NSString *)destinatario email:(Email *)email;
 
+- (NSMutableArray *) ultimosEmails:(NSString*) id_usuario;
 @end
