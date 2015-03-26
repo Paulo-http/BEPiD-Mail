@@ -62,4 +62,37 @@
     return strReturn;
 }
 
+- (NSMutableArray *) buscaUsuariosPorNome:(NSString *) palavra
+{
+    
+    NSString *string = [NSString stringWithFormat:@"http://betovieira.url.ph/weAppLoginWebservice/retornadados.php?tipo_operacao=3&user=%@", palavra];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:string]];
+    
+    NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    
+    NSArray *separaObjetos = [NSJSONSerialization JSONObjectWithData:response options:0 error:nil];
+    
+    NSMutableArray *listUser = [[NSMutableArray alloc] init];
+    NSDictionary *separaAtributos;
+    
+    
+    for (int i = 0; i < separaObjetos.count; i++) {
+        separaAtributos = [separaObjetos objectAtIndex:i];
+        
+        Usuario *u = [[Usuario alloc] init];
+        u.id_usuario = [[separaAtributos objectForKey:@"id_usuario"] intValue];
+        u.user = [separaAtributos objectForKey:@"user"];
+        u.senha = [separaAtributos objectForKey:@"senha"];
+        u.apelido = [separaAtributos objectForKey:@"apelido"];
+        u.email = [separaAtributos objectForKey:@"email"];
+        
+        [listUser addObject:u];
+    }
+    
+    return listUser;
+    
+}
+
+
 @end

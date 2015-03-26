@@ -27,6 +27,7 @@
 		DB024E601ABC839C009E3C54 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB024E5E1ABC839C009E3C54 /* LaunchScreen.xib */; };
 		DB024E6C1ABC839C009E3C54 /* weAppLoginWebServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB024E6B1ABC839C009E3C54 /* weAppLoginWebServiceTests.m */; };
 		DB024E771ABC857A009E3C54 /* Usuario.m in Sources */ = {isa = PBXBuildFile; fileRef = DB024E761ABC857A009E3C54 /* Usuario.m */; };
+		DB741A181AC47ECA002362DA /* Email.m in Sources */ = {isa = PBXBuildFile; fileRef = DB741A171AC47ECA002362DA /* Email.m */; };
 		DBDC2FBC1AC3347600B4BA92 /* Search-32.png in Resources */ = {isa = PBXBuildFile; fileRef = DBDC2FBB1AC3347600B4BA92 /* Search-32.png */; };
 		DBDC2FC01AC3353500B4BA92 /* Contacts-32.png in Resources */ = {isa = PBXBuildFile; fileRef = DBDC2FBD1AC3353500B4BA92 /* Contacts-32.png */; };
 		DBDC2FC11AC3353500B4BA92 /* Email-32.png in Resources */ = {isa = PBXBuildFile; fileRef = DBDC2FBE1AC3353500B4BA92 /* Email-32.png */; };
@@ -78,6 +79,8 @@
 		DB024E6B1ABC839C009E3C54 /* weAppLoginWebServiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weAppLoginWebServiceTests.m; sourceTree = "<group>"; };
 		DB024E751ABC857A009E3C54 /* Usuario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Usuario.h; sourceTree = "<group>"; };
 		DB024E761ABC857A009E3C54 /* Usuario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Usuario.m; sourceTree = "<group>"; };
+		DB741A161AC47ECA002362DA /* Email.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Email.h; sourceTree = "<group>"; };
+		DB741A171AC47ECA002362DA /* Email.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Email.m; sourceTree = "<group>"; };
 		DBDC2FBB1AC3347600B4BA92 /* Search-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Search-32.png"; sourceTree = "<group>"; };
 		DBDC2FBD1AC3353500B4BA92 /* Contacts-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contacts-32.png"; sourceTree = "<group>"; };
 		DBDC2FBE1AC3353500B4BA92 /* Email-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Email-32.png"; sourceTree = "<group>"; };
@@ -107,6 +110,8 @@
 			children = (
 				DB024E751ABC857A009E3C54 /* Usuario.h */,
 				DB024E761ABC857A009E3C54 /* Usuario.m */,
+				DB741A161AC47ECA002362DA /* Email.h */,
+				DB741A171AC47ECA002362DA /* Email.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -134,13 +139,6 @@
 			name = View;
 			sourceTree = "<group>";
 		};
-		75D98EF91AC37212002B6D9A /* DAL */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = DAL;
-			sourceTree = "<group>";
-		};
 		DB024E431ABC839C009E3C54 = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +160,6 @@
 		DB024E4E1ABC839C009E3C54 /* weAppLoginWebService */ = {
 			isa = PBXGroup;
 			children = (
-				75D98EF91AC37212002B6D9A /* DAL */,
 				75D98EF81AC37203002B6D9A /* View */,
 				75D98EF71AC371EF002B6D9A /* Model */,
 				DB024E531ABC839C009E3C54 /* AppDelegate.h */,
@@ -325,6 +322,7 @@
 				252C10FC1AC43AD800DBAF69 /* SearchTableViewController.m in Sources */,
 				75FB4E7E1AC47A4200FC8B58 /* EmailsTableViewController.m in Sources */,
 				DB024E581ABC839C009E3C54 /* ViewController.m in Sources */,
+				DB741A181AC47ECA002362DA /* Email.m in Sources */,
 				754A83D51AC087F40085FB3C /* SignInViewController.m in Sources */,
 				DB024E551ABC839C009E3C54 /* AppDelegate.m in Sources */,
 				754A83D21AC086450085FB3C /* SignUpViewController.m in Sources */,
