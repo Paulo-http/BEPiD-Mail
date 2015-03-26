@@ -62,6 +62,7 @@ Usuario *userSend;
     e.assunto = self.assuntoTextView.text;
     e.texto = self.sendMailTextView.text;
     
+    [e enviaEmail:receptor.email email:e];
     
     UIStoryboard * tela = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     SearchTableViewController * view = [tela instantiateViewControllerWithIdentifier:@"homeViewID"];
