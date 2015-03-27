@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 
+#import "Usuario.h"
+
+
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
 
@@ -16,9 +19,13 @@
 @implementation ViewController
 
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.usernameLabel.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"UsernameID"];
+    
+    
+
 }
 
 - (void)didReceiveMemoryWarning {

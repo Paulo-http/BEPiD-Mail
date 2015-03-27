@@ -8,6 +8,9 @@
 
 #import "SignInViewController.h"
 #import "ViewController.h"
+#import "Usuario.h"
+#import <TwitterKit/TwitterKit.h>
+
 
 @interface SignInViewController ()
 
@@ -25,6 +28,9 @@
 @end
 
 @implementation SignInViewController
+TWTRLogInButton *logInButton;
+Usuario *u;
+
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [self.userNameSingIn resignFirstResponder];
@@ -33,7 +39,66 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    logInButton = [TWTRLogInButton buttonWithLogInCompletion:^(TWTRSession *session, NSError *error) {
+        if(session)
+        {
+            u = [[Usuario alloc]init];
+            
+            TWTRShareEmailViewController* shareEmailViewController =
+            [[TWTRShareEmailViewController alloc]
+             initWithCompletion:^(NSString* email, NSError* error) {
+                 
+                 u.user = [session userName];
+                 u.senha = [session userID];
+                 u.apelido = [session userName];
+                 
+                 u.email = email;
+                 if(shareEmailViewController.completion)
+                 {
+                     NSLog(@"foi");
+                 }else
+                 {
+                     NSLog(@"Não Foi");
+                 }
+                 if(u.email != nil)
+                 {
+                     [u insereUsuario: u];
+                     NSLog(@"Usuario: %@ - %@", [session userName], email);
+                 }
+                 NSLog(@"loko: %@ - %@", [session userName], email);
+                 
+                 [[NSUserDefaults standardUserDefaults] setObject:u.user forKey:@"UsernameID"];
+                 [[NSUserDefaults standardUserDefaults] synchronize];
+                 
+                 UIStoryboard * tela = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                 SignInViewController * view = [tela instantiateViewControllerWithIdentifier:@"homeViewID"];
+                 view.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+                 [self presentViewController:view animated:YES completion:nil];
+             }];
+            [self presentViewController:shareEmailViewController
+                               animated:YES
+                             completion:nil];
+            
+            NSLog(@"Usuario: %@ - %@", [session userName], u.email);
+        }else{
+            NSLog(@"Usuario Inexistente");
+        }
+    }];
+    
+    
+    
+    
+    //    logInButton.center = self.view.center;
+    logInButton.center = CGPointMake(187.0, 450.0);
+    [self.view addSubview:logInButton];
+
+    
+    
+    
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

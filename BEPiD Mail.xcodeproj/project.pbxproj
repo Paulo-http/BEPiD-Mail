@@ -28,6 +28,9 @@
 		DB024E601ABC839C009E3C54 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB024E5E1ABC839C009E3C54 /* LaunchScreen.xib */; };
 		DB024E6C1ABC839C009E3C54 /* weAppLoginWebServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB024E6B1ABC839C009E3C54 /* weAppLoginWebServiceTests.m */; };
 		DB024E771ABC857A009E3C54 /* Usuario.m in Sources */ = {isa = PBXBuildFile; fileRef = DB024E761ABC857A009E3C54 /* Usuario.m */; };
+		DB3FA8381AC56349000E7533 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3FA8351AC56349000E7533 /* TwitterKit.framework */; };
+		DB3FA8391AC56349000E7533 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DB3FA8361AC56349000E7533 /* TwitterKitResources.bundle */; };
+		DB3FA83A1AC56349000E7533 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3FA8371AC56349000E7533 /* Fabric.framework */; };
 		DB741A181AC47ECA002362DA /* Email.m in Sources */ = {isa = PBXBuildFile; fileRef = DB741A171AC47ECA002362DA /* Email.m */; };
 		DBDC2FBC1AC3347600B4BA92 /* Search-32.png in Resources */ = {isa = PBXBuildFile; fileRef = DBDC2FBB1AC3347600B4BA92 /* Search-32.png */; };
 		DBDC2FC01AC3353500B4BA92 /* Contacts-32.png in Resources */ = {isa = PBXBuildFile; fileRef = DBDC2FBD1AC3353500B4BA92 /* Contacts-32.png */; };
@@ -82,6 +85,9 @@
 		DB024E6B1ABC839C009E3C54 /* weAppLoginWebServiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weAppLoginWebServiceTests.m; sourceTree = "<group>"; };
 		DB024E751ABC857A009E3C54 /* Usuario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Usuario.h; sourceTree = "<group>"; };
 		DB024E761ABC857A009E3C54 /* Usuario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Usuario.m; sourceTree = "<group>"; };
+		DB3FA8351AC56349000E7533 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		DB3FA8361AC56349000E7533 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		DB3FA8371AC56349000E7533 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		DB741A161AC47ECA002362DA /* Email.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Email.h; sourceTree = "<group>"; };
 		DB741A171AC47ECA002362DA /* Email.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Email.m; sourceTree = "<group>"; };
 		DBDC2FBB1AC3347600B4BA92 /* Search-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Search-32.png"; sourceTree = "<group>"; };
@@ -95,6 +101,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB3FA8381AC56349000E7533 /* TwitterKit.framework in Frameworks */,
+				DB3FA83A1AC56349000E7533 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +155,9 @@
 		DB024E431ABC839C009E3C54 = {
 			isa = PBXGroup;
 			children = (
+				DB3FA8351AC56349000E7533 /* TwitterKit.framework */,
+				DB3FA8361AC56349000E7533 /* TwitterKitResources.bundle */,
+				DB3FA8371AC56349000E7533 /* Fabric.framework */,
 				DB024E4E1ABC839C009E3C54 /* weAppLoginWebService */,
 				DB024E681ABC839C009E3C54 /* weAppLoginWebServiceTests */,
 				DB024E4D1ABC839C009E3C54 /* Products */,
@@ -222,6 +233,7 @@
 				DB024E481ABC839C009E3C54 /* Sources */,
 				DB024E491ABC839C009E3C54 /* Frameworks */,
 				DB024E4A1ABC839C009E3C54 /* Resources */,
+				DB3FA8341AC562E1000E7533 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -294,6 +306,7 @@
 			files = (
 				758906061AC35A3B007BF3B9 /* mainBackground.jpg in Resources */,
 				758906081AC35DBE007BF3B9 /* buttonOrange.png in Resources */,
+				DB3FA8391AC56349000E7533 /* TwitterKitResources.bundle in Resources */,
 				DB024E5B1ABC839C009E3C54 /* Main.storyboard in Resources */,
 				DBDC2FC01AC3353500B4BA92 /* Contacts-32.png in Resources */,
 				752914C11AC37E6700715F85 /* Paper Plane-50.png in Resources */,
@@ -315,6 +328,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DB3FA8341AC562E1000E7533 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 789b7f675b3ca492c9b1a427bd0bbd0ed147c791 07ba35bcc05b859cae2347d6666010654e47b83a11d2392d6db2bf40d5e53353";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DB024E481ABC839C009E3C54 /* Sources */ = {
@@ -455,6 +484,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = weAppLoginWebService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "BEPiD Mail";
@@ -465,6 +498,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = weAppLoginWebService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "BEPiD Mail";
