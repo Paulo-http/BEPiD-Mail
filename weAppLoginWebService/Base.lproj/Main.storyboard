@@ -464,6 +464,7 @@
             <objects>
                 <navigationController id="O7T-yN-vEY" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="Home-32.png" id="xSK-MU-47T"/>
+                    <navigationItem key="navigationItem" id="1np-hz-FjG"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -588,6 +589,9 @@
                     <navigationItem key="navigationItem" id="rqf-GT-HTY"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="RcA-1J-m72" kind="showDetail" identifier="emailsSegue" id="JvH-94-lGB"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dOU-NC-2ra" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -596,7 +600,7 @@
         <!--Mail Box View Controller-->
         <scene sceneID="uCl-R3-hnl">
             <objects>
-                <viewController id="RcA-1J-m72" customClass="MailBoxViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mailBoxID" id="RcA-1J-m72" customClass="MailBoxViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2zP-Lh-rb5"/>
                         <viewControllerLayoutGuide type="bottom" id="Nfa-o8-jp3"/>
@@ -628,13 +632,24 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="hac-Na-me5" kind="presentation" id="3Vp-yc-kMW"/>
+                                </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E3k-Ag-eSA">
+                                <rect key="frame" x="16" y="145" width="343" height="33"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="assuntoTextView" destination="E3k-Ag-eSA" id="Tbo-7b-Hmj"/>
                         <outlet property="mailBoxTextView" destination="39d-9L-YVN" id="m2K-6i-8wO"/>
                     </connections>
                 </viewController>

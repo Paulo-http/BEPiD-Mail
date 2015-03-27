@@ -8,7 +8,6 @@
 
 #import "EmailsTableViewController.h"
 #import "MailBoxViewController.h"
-#import "Email.h"
 
 @interface EmailsTableViewController ()
 
@@ -21,8 +20,7 @@ NSMutableArray *arrayEmail;
 - (void)viewDidLoad {
     [super viewDidLoad];
     e = [[Email alloc]init];
-    NSString *username = [[NSUserDefaults standardUserDefaults] objectForKey:@"UsernameID"];
-    NSLog(@"%@", username);
+    NSString *username = [[NSUserDefaults standardUserDefaults] objectForKey:@"UserID"];
     arrayEmail = [e ultimosEmails:username];
 }
 
@@ -49,22 +47,20 @@ NSMutableArray *arrayEmail;
     }
     
     e = [arrayEmail objectAtIndex:indexPath.row];
-
+    
     UILabel *nameLabel = (UILabel *)[cell viewWithTag:101];
-    nameLabel.text = e.assunto;
-    NSLog(@"%@", e.assunto);
+    nameLabel.text = @"Assunto:";
     UILabel *emailLabel = (UILabel *)[cell viewWithTag:102];
-    emailLabel.text = e.texto;
-    NSLog(@"%@", e.texto);
+    emailLabel.text = e.assunto;
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-//    self.contactUser = [users objectAtIndex:indexPath.row];
-//    UIStoryboard *main = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
-//    SendMailViewController *sendMail = [main instantiateViewControllerWithIdentifier:@"sendID"];
-//    sendMail = [[SendMailViewController alloc]initWithUser:self.contactUser];
-//    [self performSegueWithIdentifier:@"contactsSegue" sender:self];
+    self.emailSend = [arrayEmail objectAtIndex:indexPath.row];
+    UIStoryboard *main = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    MailBoxViewController *mailBox = [main instantiateViewControllerWithIdentifier:@"mailBoxID"];
+    mailBox = [[MailBoxViewController alloc]initWithUser:self.emailSend];
+    [self performSegueWithIdentifier:@"emailsSegue" sender:self];
 }
 
 /*

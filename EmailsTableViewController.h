@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Email.h"
 
 @interface EmailsTableViewController : UITableViewController
-
+@property (nonatomic) Email* emailSend;
 @end

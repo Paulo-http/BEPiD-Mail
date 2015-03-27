@@ -52,7 +52,9 @@
 - (NSMutableArray *) ultimosEmails:(NSString*) id_usuario
 {
     
-    NSString *string = [NSString stringWithFormat:@"http://betovieira.url.ph/weAppLoginWebservice/retornadados.php?tipo_operacao=5&id_usuario=%@", id_usuario];
+    NSString *string = [NSString stringWithFormat:@"http://betovieira.url.ph/weAppLoginWebservice/retornadados.php?tipo_operacao=5&id_usuario=%d", 15];
+    
+    NSLog(@"%@", string);
     
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:string]];
     

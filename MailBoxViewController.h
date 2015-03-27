@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Email.h"
 
 @interface MailBoxViewController : UIViewController
-
+- (id)initWithUser:(Email *)e;
 @end
