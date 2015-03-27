@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DB024E4B1ABC839C009E3C54"
-               BuildableName = "weAppLoginWebService.app"
+               BuildableName = "BEPiD Mail.app"
                BlueprintName = "weAppLoginWebService"
                ReferencedContainer = "container:BEPiD Mail.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DB024E4B1ABC839C009E3C54"
-            BuildableName = "weAppLoginWebService.app"
+            BuildableName = "BEPiD Mail.app"
             BlueprintName = "weAppLoginWebService"
             ReferencedContainer = "container:BEPiD Mail.xcodeproj">
          </BuildableReference>
@@ -77,7 +77,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DB024E4B1ABC839C009E3C54"
-            BuildableName = "weAppLoginWebService.app"
+            BuildableName = "BEPiD Mail.app"
             BlueprintName = "weAppLoginWebService"
             ReferencedContainer = "container:BEPiD Mail.xcodeproj">
          </BuildableReference>
@@ -96,7 +96,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DB024E4B1ABC839C009E3C54"
-            BuildableName = "weAppLoginWebService.app"
+            BuildableName = "BEPiD Mail.app"
             BlueprintName = "weAppLoginWebService"
             ReferencedContainer = "container:BEPiD Mail.xcodeproj">
          </BuildableReference>
