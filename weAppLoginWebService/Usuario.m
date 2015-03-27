@@ -46,6 +46,11 @@
 
 - (NSString *) insereUsuario:(Usuario*)u
 {
+    
+    u.user = [u.user stringByReplacingOccurrencesOfString:@" " withString:@""];
+    u.apelido = [u.apelido stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
+    u.email = [u.email stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
     NSString *string = [NSString stringWithFormat:@"http://betovieira.url.ph/weAppLoginWebservice/retornadados.php?tipo_operacao=1&user=%@&senha=%@&apelido=%@&email=%@", u.user, u.senha, u.apelido, u.email];
     
     NSLog(@"%@", string);
