@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:weAppLoginWebService.xcodeproj">
+      location = "self:BEPiD Mail.xcodeproj">
    </FileRef>
 </Workspace>

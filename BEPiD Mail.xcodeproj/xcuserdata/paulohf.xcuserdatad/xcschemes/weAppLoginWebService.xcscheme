@@ -17,7 +17,7 @@
                BlueprintIdentifier = "DB024E4B1ABC839C009E3C54"
                BuildableName = "weAppLoginWebService.app"
                BlueprintName = "weAppLoginWebService"
-               ReferencedContainer = "container:weAppLoginWebService.xcodeproj">
+               ReferencedContainer = "container:BEPiD Mail.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "DB024E641ABC839C009E3C54"
                BuildableName = "weAppLoginWebServiceTests.xctest"
                BlueprintName = "weAppLoginWebServiceTests"
-               ReferencedContainer = "container:weAppLoginWebService.xcodeproj">
+               ReferencedContainer = "container:BEPiD Mail.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,7 +49,7 @@
                BlueprintIdentifier = "DB024E641ABC839C009E3C54"
                BuildableName = "weAppLoginWebServiceTests.xctest"
                BlueprintName = "weAppLoginWebServiceTests"
-               ReferencedContainer = "container:weAppLoginWebService.xcodeproj">
+               ReferencedContainer = "container:BEPiD Mail.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -59,7 +59,7 @@
             BlueprintIdentifier = "DB024E4B1ABC839C009E3C54"
             BuildableName = "weAppLoginWebService.app"
             BlueprintName = "weAppLoginWebService"
-            ReferencedContainer = "container:weAppLoginWebService.xcodeproj">
+            ReferencedContainer = "container:BEPiD Mail.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -79,7 +79,7 @@
             BlueprintIdentifier = "DB024E4B1ABC839C009E3C54"
             BuildableName = "weAppLoginWebService.app"
             BlueprintName = "weAppLoginWebService"
-            ReferencedContainer = "container:weAppLoginWebService.xcodeproj">
+            ReferencedContainer = "container:BEPiD Mail.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -98,7 +98,7 @@
             BlueprintIdentifier = "DB024E4B1ABC839C009E3C54"
             BuildableName = "weAppLoginWebService.app"
             BlueprintName = "weAppLoginWebService"
-            ReferencedContainer = "container:weAppLoginWebService.xcodeproj">
+            ReferencedContainer = "container:BEPiD Mail.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

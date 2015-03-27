@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6E1CAD4A-172C-4846-897C-DA66497C7893</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BEPiD Mail</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E6F3EA5A1DDEB4CE61FBA7A5F0CC37BDD68B2F8F</key>
+		<string>https://github.com/Paulo-http/BEPiD-Mail.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BEPiD Mail.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E6F3EA5A1DDEB4CE61FBA7A5F0CC37BDD68B2F8F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Paulo-http/BEPiD-Mail.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E6F3EA5A1DDEB4CE61FBA7A5F0CC37BDD68B2F8F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E6F3EA5A1DDEB4CE61FBA7A5F0CC37BDD68B2F8F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BEPiD-Mail</string>
+		</dict>
+	</array>
+</dict>
+</plist>

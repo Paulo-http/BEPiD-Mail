@@ -67,7 +67,7 @@
 		75FB4E7A1AC4752E00FC8B58 /* Home-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home-32.png"; sourceTree = "<group>"; };
 		75FB4E7C1AC47A4200FC8B58 /* EmailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmailsTableViewController.h; path = ../EmailsTableViewController.h; sourceTree = "<group>"; };
 		75FB4E7D1AC47A4200FC8B58 /* EmailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmailsTableViewController.m; path = ../EmailsTableViewController.m; sourceTree = "<group>"; };
-		DB024E4C1ABC839C009E3C54 /* weAppLoginWebService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weAppLoginWebService.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB024E4C1ABC839C009E3C54 /* BEPiD Mail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BEPiD Mail.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB024E501ABC839C009E3C54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB024E511ABC839C009E3C54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DB024E531ABC839C009E3C54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 		DB024E4D1ABC839C009E3C54 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DB024E4C1ABC839C009E3C54 /* weAppLoginWebService.app */,
+				DB024E4C1ABC839C009E3C54 /* BEPiD Mail.app */,
 				DB024E651ABC839C009E3C54 /* weAppLoginWebServiceTests.xctest */,
 			);
 			name = Products;
@@ -229,7 +229,7 @@
 			);
 			name = weAppLoginWebService;
 			productName = weAppLoginWebService;
-			productReference = DB024E4C1ABC839C009E3C54 /* weAppLoginWebService.app */;
+			productReference = DB024E4C1ABC839C009E3C54 /* BEPiD Mail.app */;
 			productType = "com.apple.product-type.application";
 		};
 		DB024E641ABC839C009E3C54 /* weAppLoginWebServiceTests */ = {
@@ -268,7 +268,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DB024E471ABC839C009E3C54 /* Build configuration list for PBXProject "weAppLoginWebService" */;
+			buildConfigurationList = DB024E471ABC839C009E3C54 /* Build configuration list for PBXProject "BEPiD Mail" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -457,7 +457,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = weAppLoginWebService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "BEPiD Mail";
 			};
 			name = Debug;
 		};
@@ -467,7 +467,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = weAppLoginWebService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "BEPiD Mail";
 			};
 			name = Release;
 		};
@@ -508,7 +508,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DB024E471ABC839C009E3C54 /* Build configuration list for PBXProject "weAppLoginWebService" */ = {
+		DB024E471ABC839C009E3C54 /* Build configuration list for PBXProject "BEPiD Mail" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DB024E6D1ABC839C009E3C54 /* Debug */,
